@@ -85,7 +85,7 @@ while True:
             time.sleep(2)
             print(f"Your point: {point}")
         else:
-            print(f"Yanlış cavab verdiyiniz üçün təbriq edilmir. Doğru cavab: {fact}")
+            print(f"Bəxtinizi bir daha sınayın. Doğru cavab: {fact}")
             point = point - 2
             time.sleep(2)
             print(f"Your point: {point}")

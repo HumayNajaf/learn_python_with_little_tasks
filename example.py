@@ -33,31 +33,35 @@ from functools import reduce
 # myBabyAge = 26
 
 # while (True):
-#     age = int(input("tahmin et bakalum: "))
+#     age = int(input("tahmin et bakalım: "))
 #     if  myBabyAge == 0:
-#         print ("hele bebekdi kiiii")
+#         print ("Çok küçükmüş")
 #     elif myBabyAge > age:
-#         print("bilmiyosun iste o qeder bayaca doyul")
+#         print("Biraz artır")
 #     elif myBabyAge < age:
-#         print("ade bebem bayacadiyeee")
+#         print("Yox o qədər də deyil azalt")
 #     else:
-#         print("hehhehhh duz tapdun")
+#         print("Doğruuuu!!!!")
 #         break
 
 
 
-# isim = input( 'adinizi yaziniz : ')
-# print('adinizin herfleri: ')
-# for letter in isim:
-#     print(letter)
+az = "əğöüşçİı"
+isim = input( 'Adinizi yazin: ')
+print('adinizin herfleri: ')
+for letter in isim:
+    letter
+    
+# ad = input( 'Adınızı təkrar yazın: ')
 
-# az = "əğöüşçİı"
-# ad = input( 'adinizi yaziniz : ')
-# for char in ad:
-#     if char in az:
-#         print("abovvvv yapma len")
-#         quit()
-# print('akilli bidik seni')
+for char in isim:
+    if char in az:
+        print("Müəyyən edilmiş hərflərin istifadəsi qadağandır!")
+    else:
+        print(char)
+        
+
+
 
 
 
@@ -115,5 +119,3 @@ from functools import reduce
 # words = [input(), input(), input()]
 # print(list(filter(isTitle, words)))
 
-
-#! reduce anlaşılmadı
