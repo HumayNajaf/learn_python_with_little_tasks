@@ -45,21 +45,16 @@ from functools import reduce
 #         break
 
 
-
-az = "əğöüşçİı"
-isim = input( 'Adinizi yazin: ')
-print('adinizin herfleri: ')
-for letter in isim:
-    letter
+bannedLetters = ["ö", "İ", "ş", "ğ", "ü", "ç", "ı"]
+while True:
+    isim = input( 'Adınızı yazin: ')
     
-# ad = input( 'Adınızı təkrar yazın: ')
-
-for char in isim:
-    if char in az:
-        print("Müəyyən edilmiş hərflərin istifadəsi qadağandır!")
+    if any(letter in isim for  letter in bannedLetters):
+        print(f"Müəyyən edilmiş {bannedLetters} hərflərinin istifadəsi qadağandır...")
     else:
-        print(char)
-        
+        for letter in isim:
+            print(letter)
+        quit()
 
 
 
